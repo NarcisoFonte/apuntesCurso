@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <script type="text/javascript">
+        //var contador = 1;
+        /* while (contador <= 7) {
+             document.writeln("<p style = \"font-size: " + contador + "ex\" > html fuente " + contador + "ex</p > ");
+             contador++;
+         }*/
+
+        /*for (contador=1;contador <=10; contador++) //esto es igual que con while, pero hasta 10.
+        document.writeln("<p style = \"font-size: " + contador + "ex\" > html fuente " + contador + "ex</p > ");*/
+
+        for (var tamaño = 1; tamaño <= 6; tamaño++) {
+            document.writeln(`<h${tamaño}>¡Hola mundo! </h${tamaño}>`); //Lo que está dentro de los paréntesis no son comillas, 
+            //son tildes invertidas.
+        }
+
+        var tamaño = 1;
+        while (tamaño <= 6) {
+            document.writeln(`<h${tamaño}>¡Adiós, mundo!</h${tamaño}>`);
+            tamaño++
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

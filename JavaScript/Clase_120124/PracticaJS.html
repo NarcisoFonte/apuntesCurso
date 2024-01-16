@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica JavaScript</title>
+    <script type="text/javascript">
+       document.writeln("<h1>Practicando JavaScript</h1>");
+        //Definimos las variables.
+        var conf;
+        var numero;
+        var multiplicador = 1;
+        var resultado;
+        conf = window.prompt("Introduce la palabra 'ok': ");
+        conf = conf.toLowerCase () //Esta función convierte todo el texto (string o cadena) en minúsculas.
+        if (conf === "ok") {
+            numero = window.prompt("Introduce un número entero: ");
+            //con la función Math.floor nos aseguramos de usar sólo la parte de número entero, aunque haya decimales.
+            var numero = Math.floor(numero);
+            //con la función isNaN comprobamos si es número.
+            if (!isNaN(numero)) {
+                document.writeln("Tabla del " + numero + ": <br>");
+                //Tabla de multiplicar con bucle while.
+                while (multiplicador <= 10) {
+                    //operación multiplicar
+                    resultado = numero * multiplicador;
+                    //Impresión en pantalla.
+                    document.writeln(numero + " x " + multiplicador + " = " + resultado);
+                    //Salto de línea.
+                    document.writeln("<br>");
+                    //Incrementador.
+                    multiplicador++
+                    //En lugar de 'multiplicador++;' podemos usar:
+                    //multiplicador = multiplicador + 1;
+                    //multiplicador += 1;
+                }
+            } else {
+                window.alert("Recarga la página e introduce un número entero");
+            }
+        } else {
+            window.alert("Recarga la página e introduce la palabra ok");
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

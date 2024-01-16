@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucción Else If</title>
+    <script type="text/javascript">
+        var notaAlumno; //definimos la variable.
+        notaAlumno = window.prompt("Escribe tu nota:")
+        if (!isNaN(notaAlumno)) {
+            if (notaAlumno >= 90) {
+                document.writeln("Sobresaliente");
+                document.writeln("Muy buena nota");
+            } else if (notaAlumno >= 80) {
+                document.writeln("Notable");
+                document.writeln("Puedes hacerlo mejor");
+            } else if (notaAlumno >= 70) {
+                document.writeln("Bien");
+                document.writeln("Tienes que esforzarte más");
+            } else if (notaAlumno >= 60) {
+                document.writeln("Suficiente");
+                document.writeln("Por los pelos");
+            } else {
+                document.writeln("Suspenso");
+                document.writeln("<br>"); // Para salto de línea entre los dos textos.
+                document.writeln("Debes estudiar más");
+            }
+        } else {
+            document.writeln("Inserte un parámetro válido");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla del 2 usando While</title>
+    <script type="text/javascript">
+        //Tabla del 2.
+        var numero = 2;
+        var multiplicador = 1;
+        var resultado
+        document.writeln("Tabla del 2: <br>");
+        while (multiplicador <= 10) {
+            resultado = numero * multiplicador; //esta variable la podemos poner fuera, pero el valor de 
+            //resultado tiene que estar dentro de while para que haga las operaciones.
+            document.writeln(numero + " x " + multiplicador + " = " + resultado);
+            document.writeln("<br>");
+            multiplicador++ //esto significa que cada vez se le suma 1 al multiplicador.
+            //si no pongo esto (incrementador) no funciona.
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

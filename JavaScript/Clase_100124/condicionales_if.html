@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales If</title>
+    <script type="text/javascript">
+        //vamos a definir la variable.
+        var datoEntrada; //variable.
+        datoEntrada = window.prompt("Dime un número entero: ");
+        /*if ((datoEntrada % 2) == 0) { //estamos comparando su valor. //con el %2 estamos comprobando que el datoEntrada que introducimos realmente es múltiplo de 2, si el resultado es igual a 0 es un número par, si no es igual a 0 es un número impar.
+            document.writeln("Es un número par");
+        } else {
+            document.writeln("Es un número impar");
+        }*/
+        /* //vamos a definir la variable.
+         var datoEntrada; //variable.
+         datoEntrada = window.prompt("Dime un número entero: ");
+         if ((datoEntrada % 3) == 0) { //estamos comparando su valor. //con el %2 estamos comprobando que el datoEntrada que introducimos realmente es múltiplo de 3, si el resultado es igual a 0 es múltiplo de 3, si no es igual a 0 no es múltiplo de 3.
+             document.writeln("Es un múltiplo de 3");
+         } else {
+             document.writeln("No es un múltiplo de 3");
+         }*/
+        //Vamos a repetir el mismo ejercicio, pero utilizando una función.
+        /* function esPar(numero) {
+             return numero % 2 == 0;
+         }
+         if (esPar(datoEntrada)) {
+             document.writeln("Es un número par");
+         } else {
+             document.writeln("Es un número impar")
+         }*/
+        //Comprobamos los datos de entrada con NaN = Not A Number
+        //datoEntrada = parseInt(datoEntrada) //parseInt sirve para pasar de Strings a Number.
+        /*if (!isNaN(datoEntrada)){
+            document.writeln("Es un número")
+        } else {
+            document.writeln("No es un número, por favor, recarga e introduce un número")
+        }*/
+        //CONDICIONALES ANIDADOS
+        // Esto es para que detecte si el datoEntrada que introducimos contiene número o letras.
+        function esPar(numero) {
+            return numero % 2 == 0;
+        }
+        if (!isNaN(datoEntrada)) { //si el datoEntrada es un número, continua con la siguiente condición, pero si no es un número, salta a su else.
+            if (esPar(datoEntrada)) {
+                document.writeln("Es un número par");
+            } else {
+                document.writeln("Es un número impar");
+            }
+        } else {
+            document.writeln("No es un número, por favor, recarga e introduce un número");
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

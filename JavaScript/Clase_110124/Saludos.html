@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludos</title>
+    <script type="text/javascript">
+
+        var nombre; //Definimos las variables
+        var fecha = new Date(); //Date es una función de JavaScript, por eso no hemos tenido que crearla. A partir de esta función hemos creado el objeto fecha.
+        var hora = fecha.getHours(); //Obtenemos la hora en número entero de 0 a 23.
+        var minutos = fecha.getMinutes(); //Obtenemos los minutos en número entero de 0 a 59.
+        var dia = fecha.getDate();
+        var mes = fecha.getMonth();
+        var año = fecha.getFullYear();
+
+        nombre = window.prompt("Introduzca su nombre: ");
+        // IF
+        /* if (hora < 12) {
+             document.writeln("Buenos días " + nombre);
+         }
+         if (hora >= 12) { 
+             document.writeln("Buenas tardes " + nombre);
+         }
+         if (hora >=20) { //Utilizar 'else' para el último caso.
+             document.writeln("Buenas noches " + nombre);
+         }*/
+         // ELSE IF
+        /* if (hora < 12) {
+             document.writeln("Buenos días " + nombre);
+         }
+         else if (hora >= 12 && hora < 20) { // && esto es el operador de AND.
+             document.writeln("Buenas tardes " + nombre);
+         }
+         else { //Utilizar 'else' para el último caso.
+             document.writeln("Buenas noches " + nombre);
+         }
+         document.writeln("<br>");
+ 
+         document.writeln("Son las: " + hora + ":" + minutos + "h" + " del " + dia + " de " + mes + " de " + año + ", bienvenido a mi página web.")*/
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

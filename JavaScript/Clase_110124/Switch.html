@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <script type="text/javascript">
+        var nombre; //Definimos las variables
+        var fecha = new Date();
+        var hora = fecha.getHours();
+        var minutos = fecha.getMinutes();
+
+        nombre = window.prompt("Introduzca su nombre: ");
+        /*switch (hora) { //Es otro método para hacer condicionales.
+            case 12://getHours nos va a devolver un In, por eso no podemos escribirlo en strings "".
+                alert(nombre + ", es mediodía");
+                break; //si no ponemos break, continúa leyendo y saltan las demás alertas.
+            case 19:
+                alert(nombre + ", es por la tarde");
+                break;
+            default:
+                alert(nombre + ", es por la noche");
+                break;
+        }*/
+        var saludo;
+
+        switch (true) {
+            case (hora < 12):
+                saludo = "Buenos días " + nombre;
+                break;
+            case (hora >= 12 && hora < 20):
+                saludo = "Buenas tardes " + nombre;
+                break;
+            case (hora >= 20):
+                saludo = "Buenas noches " + nombre;
+                break;
+
+            default:
+                saludo = "Hola " + nombre;
+        }
+        saludo += " - Son las: " + hora + ":" + (minutos < 10 ? '0' : '') + minutos;
+        document.writeln(saludo);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

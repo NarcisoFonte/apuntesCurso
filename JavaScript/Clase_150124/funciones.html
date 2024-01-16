@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <script type="text/javascript">
+        /*   var total;
+           //esqueleto de la función.
+           function suma(num1, num2) { //los valores de la función no tienen por qué tener el mismo nombre, 
+               //sólo necesita saber cuantos argumentos se van a introducir.
+               return num1 + num2;//esto hace que nos devuelva el resultado que nosotros hayamos pedido en la función.
+           }
+           var numero1 = 7;
+           var numero2 = 10;
+           //variable total = llamamos a la función (variable + variable)
+           total = suma(numero1, numero2);
+           //imprimimos en pantalla.
+           document.writeln(total)
+           //salto de línea.
+           document.writeln("<br>")
+           
+           //Ahora hacemos lo mismo de una manera más simplificada.        
+           function suma(num1, num2) {
+               return num1 + num2;
+           }
+           document.writeln(suma(7,10));*/
+
+        //Ahora vamos a probar una función con letras.
+        var nombre;
+        //Esqueleto de función.            
+        function saludoBienvenida(nombre) {
+            document.writeln("<h1>Bienvenido/a " + nombre + "</h1>")
+        }
+        //Imprimimos en pantalla.
+        nombre = window.prompt("dime tu nombre");
+        //llámamos a la función. Esto es imporante, si no, no visualizamos nada.
+        saludoBienvenida(nombre);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

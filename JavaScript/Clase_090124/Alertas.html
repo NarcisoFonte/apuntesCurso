@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1</title>
+    <script type="text/javascript">
+        /* function Alumno(nombre, edad, dni) {
+             this.nombre = nombre;
+             this.edad = edad;
+             this.dni = dni;
+             alert("Creación de un objeto de la clase Alumno")
+         }
+         Alumno.prototype.nombre = "Nombre Alumno";
+         Alumno.prototype.edad = 9;
+         Alumno.prototype.dni = "00000000x";
+         Alumno.prototype.saludaAlumno = function () //definimos el método
+         {
+             alert("Hola");
+         }
+         var alumno1 = new Alumno("María", 10, "87654321Z");
+         var alumno2 = new Alumno("Federico", 8, "12345678A");
+         //mostramos el nombre del alumno
+         alert('El nombre del alumno es: ' + alumno1.nombre + '\nEdad: ' + alumno1.edad + '\nDNI: ' + alumno1.dni)
+         alert('El nombre del alumno es: ' + alumno2.nombre + '\nEdad: ' + alumno2.edad + '\nDNI: ' + alumno2.dni)
+         alumno1.saludaAlumno(); //llamamos al método*/
+
+        function Cliente(nombre, apellidos, edad) {
+            this.nombre = nombre || "Nombre cliente"; // estos dos símbolos || significan OR
+            this.apellidos = apellidos;
+            this.edad = edad;
+            // alert("Datos de clientes");
+        }
+        Cliente.prototype.nombre = "Nombre cliente";
+        Cliente.prototype.apellidos = "Apellidos cliente";
+        Cliente.prototype.edad = 30;
+       // Cliente.prototype.saludaCliente = function () { } //no sé bien por qué, pero sin estas llaves no salen las alertas. 
+       // (Creo que es por haber creado la funtcion saludaCliente)
+
+        var cliente1 = new Cliente( "", "López Hernández", 38);
+        var cliente2 = new Cliente("Ángel", "López Pérez", 34);
+        var cliente3 = new Cliente("Lucía", "Luna Agua", 30);
+        alert('Nombre: ' + cliente1.nombre + '\nApellidos: ' + cliente1.apellidos + '\nEdad: ' + cliente1.edad)
+        alert('Nombre: ' + cliente2.nombre + '\nApellidos: ' + cliente2.apellidos + '\nEdad: ' + cliente2.edad)
+        alert('Nombre: ' + cliente3.nombre + '\nApellidos: ' + cliente3.apellidos + '\nEdad: ' + cliente3.edad)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

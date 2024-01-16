@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales anidados</title>
+    <script type="text/javascript">
+        var notaAlumno; //definimos la variable.
+        notaAlumno = window.prompt("Escribe tu nota:")
+        if (!isNaN(notaAlumno)) {
+            if (notaAlumno >= 60) {
+                document.writeln("Aprobado");
+            } else {
+                document.writeln("Suspenso");
+            }
+        } else {
+            document.writeln("No es un número, por favor, recarga e introduce un número");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
